@@ -1,0 +1,109 @@
+.nav-bar {
+  background-color: black;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.portfolio-btn {
+  margin-left: 50px;
+}
+.custom-btn {
+  color: #fff;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.btn {
+  position: relative;
+  color: #00aced;
+  border: none;
+  z-index: 2;
+}
+.btn:before,
+.btn:after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  border: 1px solid;
+
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.btn:before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #00aced;
+  border-left-color: #00aced;
+}
+.btn:after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #00aced;
+  border-right-color: #00aced;
+}
+.btn:hover:before,
+.btn:hover:after {
+  border-color: #00aced;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px #00aced, 0 0 5px #00aced inset;
+}
+
+.animated-btn {
+  animation: fadeIn 0.5s linear;
+  animation-fill-mode: both;
+
+  $total-items: 6;
+  @for $i from 1 through $total-items {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.15s * $i;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav-bar-height {
+  margin-top: 60px;
+}

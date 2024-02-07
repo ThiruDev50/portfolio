@@ -1,0 +1,25 @@
+<div>
+    <nav class="nav-bar" appHideOnScroll>
+      <div class="animated-div">
+        <div class="space-holder"></div>
+        <button class="custom-btn btn portfolio-btn animated-btn">Portfolio</button>
+      </div>
+      <div class="animated-div">
+          <button class="custom-btn btn animated-btn" (click)="scrollToComponent('home')">Home</button>
+          <button class="custom-btn btn animated-btn" (click)="scrollToComponent('about')">About</button>
+          <button class="custom-btn btn animated-btn" (click)="scrollToComponent('services')">Services</button>
+          <button class="custom-btn btn animated-btn" (click)="scrollToComponent('skills')">Skills</button>
+          <button class="custom-btn btn animated-btn" (click)="scrollToComponent('project')">Project</button>
+          <button class="custom-btn btn animated-btn" (click)="scrollToComponent('contact')">Contact</button>
+      </div>
+    </nav>
+    <div class="outer" >
+      <div #home style="height: 500px;" class="nav-bar-height">Home</div>
+      <div #about style="height: 500px;" class="nav-bar-height">about</div>
+      <div #services style="height: 500px;" class="nav-bar-height">services</div>
+      <div #skills style="height: 500px;" class="nav-bar-height">skills</div>
+      <div #project style="height: 500px;" class="nav-bar-height">project</div>
+      <div #contact style="height: 500px;" class="nav-bar-height">contact</div>
+    </div>
+  </div>
+  

@@ -1,0 +1,14 @@
+Step 1 : RUN this command - "ng add angular-cli-ghpages" in root dir
+Step 2: Add the repo url as origin , command -  git remote add origin <Repo url>
+    Eg) git remote add origin https://github.com/ThiruDev50/portfolio
+Step 3: In github go to pages
+    In build and deployment set "gh-phages" branch and set "root" in the second drop down and save
+Step 3 : ng deploy --base-href=/<repo name>/   
+    Eg) ng deploy --base-href=/portfolio/
+
+
+Once DOne the above steps, 
+    Just run this from the second time to deploy - ng deploy --base-href=/portfolio/
+
+Can see the deployment here:
+    https://github.com/ThiruDev50/portfolio/deployments/github-pages
