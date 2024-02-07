@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-
+import * as AOS from 'aos';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -17,10 +17,13 @@ export class LandingPageComponent {
    
   }
   ngOnInit(): void {
+    AOS.init({
+      duration: 1200,
+    })
     
   }
 
-  
+
   scrollToComponent(section: string): void {
     let targetElement: ElementRef | undefined;
   
