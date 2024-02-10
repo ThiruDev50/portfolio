@@ -1,5 +1,5 @@
 .nav-bar {
-  background-color: black;
+  background-color: #070c1b;
   padding: 5px;
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,6 @@
 }
 .custom-btn {
   color: #fff;
-  width: 130px;
   height: 40px;
   padding: 10px 25px;
   font-family: "Lato", sans-serif;
@@ -76,7 +75,9 @@
   width: 100%;
   box-shadow: 0 0 5px #00aced, 0 0 5px #00aced inset;
 }
-
+.glowing-text{
+  text-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
+}
 .animated-btn {
   animation: fadeIn 0.5s linear;
   animation-fill-mode: both;
@@ -92,18 +93,61 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateY(80px);
   }
   75% {
     opacity: 0.5;
-    transform: translateX(0);
+    transform: translateY(0);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 .nav-bar-height {
   margin-top: 60px;
+  color: white;
 }
+
+
+
+
+
+
+
+.wrap {
+  position:relative;
+  top:100px;
+  left:100px;
+  width:0;
+  perspective:200;
+  transform-style:preserve-3d;
+  
+  div {
+    border:3px solid red;
+    position:absolute;
+    animation: slowRotate 10s infinite ease-in-out alternate;
+    box-shadow:0 0 0 transparent;
+     
+  }
+}
+
+
+@keyframes slowRotate {
+  
+  100% {
+    transform:rotate(1000deg);
+  }
+}
+
+@for $i from 1 through 20 {
+  .wrap > div:nth-of-type(#{$i}){
+    height:($i * 10px);
+    width: ($i * 10px);
+    transform: rotate( ($i * 1deg) );
+    animation-delay:($i * .2s);
+    border-color: hsla(($i * 4 + 80), 100%, 50%, 1);
+  }
+}
+

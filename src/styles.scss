@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color:#0c1022;
+    min-height: 700px;
+    min-width: 1200px;
+}
+.glowing-text{
+    text-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
+  }
+
+  .rounded-container {
+    overflow: hidden;
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+    box-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
+  }
+  
+  @keyframes float {
+      0% {
+          transform: translatey(0px);
+      }
+      50% {
+          transform: translatey(-30px);
+      }
+      100% {
+          transform: translatey(0px);
+      }
+  }

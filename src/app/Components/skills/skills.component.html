@@ -1,0 +1,11 @@
+<div class="skills-div">
+  <div data-aos="fade-right" class="glowing-text my-skills-text">
+    My Technical Skills
+  </div>
+  <br />
+  <div class="skills-container">
+    <div *ngFor="let skill of skillsList" class="skill-item">
+      <app-bouncing [skill]="skill"></app-bouncing>
+    </div>
+  </div>
+</div>

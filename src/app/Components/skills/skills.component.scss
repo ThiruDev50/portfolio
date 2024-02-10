@@ -1,0 +1,20 @@
+.my-skills-text{
+    font-size: 65px;
+    font-weight: bold;
+    margin-left: 10%;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    gap: 10px; /* Adjust the gap between items as needed */
+  }
+
+  .skill-item {
+    width: 300px; /* Set the maximum width for each item */
+    margin-bottom: 10px; /* Adjust the margin between items as needed */
+  }
+  .skills-div{
+    padding-top: 10%;
+  }

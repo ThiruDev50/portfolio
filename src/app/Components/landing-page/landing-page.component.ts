@@ -1,5 +1,8 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import * as AOS from 'aos';
+
+declare var Typed: any;
+
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -12,17 +15,18 @@ export class LandingPageComponent {
   @ViewChild('skills') skillsSection!: ElementRef;
   @ViewChild('project') projectSection!: ElementRef;
   @ViewChild('contact') contactSection!: ElementRef;
+  
   ngAfterViewInit(): void {
     // At this point, the ViewChild properties should be initialized
    
   }
   ngOnInit(): void {
-    AOS.init({
-      duration: 1200,
-    })
-    
-  }
 
+    AOS.init({
+      duration: 1000,
+    })
+   
+  }
 
   scrollToComponent(section: string): void {
     let targetElement: ElementRef | undefined;
@@ -48,7 +52,6 @@ export class LandingPageComponent {
         break;
     }
     if (targetElement && targetElement.nativeElement) {
-    
       targetElement.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'center'});
     }
   }
