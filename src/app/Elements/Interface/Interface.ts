@@ -4,3 +4,7 @@ export  interface SkillsInterface{
     ImgPath: string;
     RedirectionUrl: string;
 }
+
+export interface AcheivementsInterface{
+    Title:string;
+}

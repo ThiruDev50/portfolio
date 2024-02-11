@@ -1,4 +1,4 @@
-import { SkillsInterface } from '../../Elements/Interface/Interface';
+import { AcheivementsInterface, SkillsInterface } from '../../Elements/Interface/Interface';
 
 export const skillsData: SkillsInterface[] = [
   {
@@ -78,3 +78,42 @@ export const skillsData: SkillsInterface[] = [
     RedirectionUrl: 'https://angular.io/',
   },
 ];
+
+
+export const acheivementsData : AcheivementsInterface[]=[
+  {
+    Title:"One"
+  },
+  {
+    Title:"Onesd"
+  },
+  {
+    Title:"Onesfs"
+  },
+  {
+    Title:"Onsfswe"
+  },
+  {
+    Title:"Onwrwte"
+  },
+
+  {
+    Title:"O6ine"
+  },
+  {
+    Title:"Onukyukdhe"
+  },
+  {
+    Title:"Ondhdfjhe"
+  },
+]
+
+export const visitTaleData : string[]=[
+  "A random 1",
+  "A random 2",
+  "A random 3",
+  "A random 4",
+  "A random 5",
+  "A random 6",
+  "A random 7",
+]

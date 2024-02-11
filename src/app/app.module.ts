@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { NgxTypedJsComponent, NgxTypedJsModule } from 'ngx-typed-js';
 
@@ -10,6 +10,15 @@ import { BouncingComponent } from './Components/HelpersComp/bouncing/bouncing.co
 import { SkillsComponent } from './Components/skills/skills.component';
 import { AboutComponent } from './Components/about/about.component';
 import { HomeComponent } from './Components/home/home.component';
+import { ContributionsComponent } from './Components/contributions/contributions.component';
+import { ProjectsComponent } from './Components/projects/projects.component';
+import { ThreeDCardComponent } from './Components/HelpersComp/three-d-card/three-d-card.component';
+import { GlassCardComponent } from './Components/HelpersComp/glass-card/glass-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { QuoteComponent } from './Components/quote/quote.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { SocialComponent } from './Components/HelpersComp/social/social.component';
 
 @NgModule({
   declarations: [
@@ -19,17 +28,28 @@ import { HomeComponent } from './Components/home/home.component';
     BouncingComponent,
     SkillsComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    ContributionsComponent,
+    ProjectsComponent,
+    ThreeDCardComponent,
+    GlassCardComponent,
+    QuoteComponent,
+    FooterComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxTypedJsModule
-    
+    NgxTypedJsModule,
+    BrowserAnimationsModule,
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

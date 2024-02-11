@@ -1,0 +1,28 @@
+
+
+
+   <div >
+    <div data-aos="fade-right" class="glowing-text title-text" style="margin-left: 10%;">
+        My Contributions
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <div *ngIf="leftContent; else emptyLeft" class="left" data-aos="fade-left" (click)="leftBtnCLicked()">
+            <i class="fas fa-chevron-left glowing-text icon-with-shadow"></i>
+        </div>
+        <ng-template #emptyLeft></ng-template>
+      
+        <div class="middle">
+            <app-glass-card [cardList]="visibleCards"></app-glass-card>
+            
+        </div>
+      
+        <div *ngIf="rightContent; else emptyRight" class="right" data-aos="fade-right" (click)="rightBtnClicked()">
+            <i class="fas fa-chevron-right glowing-text icon-with-shadow"></i>
+        </div>
+        <ng-template #emptyRight></ng-template>
+      </div>
+   </div>
+ 
+      

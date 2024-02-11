@@ -1,0 +1,46 @@
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left, .right {
+    width: 15%;
+    height: 560px;
+  }
+  
+  .middle {
+    width: 70%;
+  }
+
+  .left {
+    order: 1; 
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .right {
+    order: 3; 
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .middle {
+    order: 2;
+  }
+  
+  .icon-with-shadow {
+    font-size: 150px;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  }
+  
+  .icon-with-shadow:hover {
+    color: #00aced;
+    font-size: 160px;
+    text-shadow: 0 0 30px #00aced, 0 0 100px #00aced, 0 0 200px #00aced;
+  }

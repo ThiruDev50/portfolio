@@ -1,0 +1,27 @@
+<div class="container">
+      <div class="box" *ngIf="this.firstCard" data-aos="fade-left" >
+      <span></span>
+      <div class="content">
+        <h2>{{firstCard.Title}}</h2>
+        <p>Lorem ipsum dolor sit amet,</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="box" *ngIf="this.secondCard" data-aos="zoom-in" [style.background-before]="expression" [style.background-after]="expression">
+      <span></span>
+      <div class="content">
+        <h2>{{secondCard.Title}}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="box" *ngIf="this.thirdCard" data-aos="fade-right">
+      <span></span>
+      <div class="content">
+        <h2>{{thirdCard.Title}}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+    

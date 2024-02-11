@@ -20,8 +20,11 @@ export class LandingPageComponent {
     // At this point, the ViewChild properties should be initialized
    
   }
+  
   ngOnInit(): void {
-
+   // 3rd step : 
+              
+// and  
     AOS.init({
       duration: 1000,
     })
