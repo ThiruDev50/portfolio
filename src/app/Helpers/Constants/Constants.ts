@@ -1,4 +1,4 @@
-import { AcheivementsInterface, SkillsInterface } from '../../Elements/Interface/Interface';
+import { AcheivementsInterface, ProjectInterface, SkillsInterface } from '../../Elements/Interface/Interface';
 
 export const skillsData: SkillsInterface[] = [
   {
@@ -116,4 +116,32 @@ export const visitTaleData : string[]=[
   "A random 5",
   "A random 6",
   "A random 7",
+]
+
+export const projectData : ProjectInterface[]=[
+  {
+    ImgPath:"/assets/images/img-1.jpg",
+    ProjectDisplayName:"Display Name 1",
+    ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
+    ProjectTitle:"Project Titlle 1"
+  },
+  {
+    ImgPath:"https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ProjectDisplayName:"Display Name 2",
+    ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
+    ProjectTitle:"Project Titlle 2"
+  },
+  {
+    ImgPath:"https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ProjectDisplayName:"Display Name 3",
+    ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
+    ProjectTitle:"Project Titlle 3"
+  },
+  {
+    ImgPath:"https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ProjectDisplayName:"Display Name 4",
+    ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
+    ProjectTitle:"Project Titlle 4"
+  }
+  
 ]

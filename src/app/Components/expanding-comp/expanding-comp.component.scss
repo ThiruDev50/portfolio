@@ -1,0 +1,102 @@
+.cards {
+  display: flex;
+  max-width: 930px;
+  width: calc(100% - 100px);
+  height: 500px;
+}
+
+.card {
+  position: relative;
+  min-width: 60px;
+  overflow: hidden;
+  // background-image:url("https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
+  margin: 5px;
+  background-size: auto 150%;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  border-radius: 30px;
+}
+.card.active {
+  flex-grow: 10000;
+  background-size: auto 100%;
+}
+.card-container:not(.active) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+/*   */
+
+
+/*  .cards .card:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+  } */
+
+.card-container {
+  height: 100%;
+  width: 100%;
+}
+.card-container.active {
+  background: transparent;
+}
+.card-container:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+/* .card-container.active:hover{
+  background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+} */
+.card.active:hover{
+   transform: scale(0.95); 
+}
+
+.card-container.active:not(:hover) .project-details{
+  display: none;
+}
+.project-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  writing-mode: vertical-rl; 
+  text-orientation: sideways; 
+  transform: rotate(180deg); 
+  white-space: nowrap; 
+}
+
+.project-details{
+  height: 100%;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-title{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.view-more-btn{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  border-radius: 8px;
+  width: 110px;
+  background-color: #00aced;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+.view-more-btn:hover{
+  background-color: #0c1022;
+}
+.btn-container{
+  display: flex;
+  align-items: center;
+}
+

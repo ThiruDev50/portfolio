@@ -1,0 +1,79 @@
+<div class="cards">
+  <div class="card" [class.active]="activeCard === 0" [style.background-image]="'url(' + projectData[0].ImgPath + ')'" (click)="cardClicked(0)" >
+    <div class="card-container" [class.active]="activeSubCard === 0">
+      <div class="project-name" *ngIf="activeSubCard !== 0">{{projectDisplayNameList[0]}}</div>
+      <div class="project-details" [class.active]="activeSubCard === 0" *ngIf="activeSubCard === 0">
+        <div class="project-title">
+          {{projectData[0].ProjectTitle}}
+        </div>
+        <div class="project-desc"> 
+          {{projectData[0].ProjectDesc}}
+        </div>
+        <br>
+        <div class="btn-container" >
+          <span class="view-more-btn">Know More</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="card" [class.active]="activeCard === 1" [style.background-image]="'url(' + projectData[1].ImgPath + ')'" (click)="cardClicked(1)" >
+    <div class="card-container" [class.active]="activeSubCard === 1">
+      <div class="project-name" *ngIf="activeSubCard !== 1">{{projectDisplayNameList[1]}}</div>
+      <div class="project-details" [class.active]="activeSubCard === 1" *ngIf="activeSubCard === 1">
+        <div class="project-title">
+          {{projectData[1].ProjectTitle}}
+        </div>
+        <div class="project-desc">  
+          {{projectData[1].ProjectDesc}}
+        </div>
+        <br>
+        <div class="btn-container" >
+          <span class="view-more-btn">Know More</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+    <div class="card" [class.active]="activeCard === 2" [style.background-image]="'url(' + projectData[2].ImgPath + ')'" (click)="cardClicked(2)" >
+      <div class="card-container" [class.active]="activeSubCard === 2">
+        <div class="project-name" *ngIf="activeSubCard !== 2">{{projectDisplayNameList[2]}}</div>
+        <div class="project-details" [class.active]="activeSubCard === 2" *ngIf="activeSubCard === 2">
+          <div class="project-title">
+            {{projectData[2].ProjectTitle}}
+          </div>
+          <div class="project-desc">  
+            {{projectData[2].ProjectDesc}}
+          </div>
+          <br>
+          <div class="btn-container" >
+            <span class="view-more-btn">Know More</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="card" [class.active]="activeCard === 3" [style.background-image]="'url(' + projectData[3].ImgPath + ')'" (click)="cardClicked(3)" >
+      <div class="card-container" [class.active]="activeSubCard === 3">
+        <div class="project-name" *ngIf="activeSubCard !== 3">{{projectDisplayNameList[3]}}</div>
+        <div class="project-details" [class.active]="activeSubCard === 3" *ngIf="activeSubCard === 3">
+          <div class="project-title">
+            {{projectData[3].ProjectTitle}}
+          </div>
+          <div class="project-desc">  
+            {{projectData[3].ProjectDesc}}
+          </div>
+          <br>
+          <div class="btn-container" >
+            <span class="view-more-btn">Know More</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    
+
+  </div>

@@ -8,3 +8,10 @@ export  interface SkillsInterface{
 export interface AcheivementsInterface{
     Title:string;
 }
+export interface ProjectInterface{
+    ImgPath:string;
+    ProjectDisplayName:string
+    ProjectTitle:string;
+    ProjectDesc:string
+}
+

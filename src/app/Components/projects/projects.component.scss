@@ -1,0 +1,36 @@
+.projects-div{
+    padding-top: 10%;
+
+}
+.projects-container {
+    flex-wrap: wrap;
+    margin-left: 25%;
+  }
+.project-item{
+    width: 400px; 
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.view-more-btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 10px;
+    width: 135px;
+    background-color: #00aced;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.view-more-btn:hover{
+    box-shadow: 0 0 15px #00aced, 0 0 10px #00aced, 0 0 15px #00aced;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
