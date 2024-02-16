@@ -13,5 +13,6 @@ export interface ProjectInterface{
     ProjectDisplayName:string
     ProjectTitle:string;
     ProjectDesc:string
+    TechStack:string[]
 }
 

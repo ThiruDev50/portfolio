@@ -3,16 +3,16 @@
     <div class="card-container" [class.active]="activeSubCard === 0">
       <div class="project-name" *ngIf="activeSubCard !== 0">{{projectDisplayNameList[0]}}</div>
       <div class="project-details" [class.active]="activeSubCard === 0" *ngIf="activeSubCard === 0">
-        <div class="project-title">
+        <div class="project-title" data-aos="zoom-in">
           {{projectData[0].ProjectTitle}}
+        </div>
+        <div class="project-tech-stack">
+          {{ projectData[0].TechStack.length > 0 ? "Project Tech stack : [" + projectData[0].TechStack.join(' , ') + "]" : "" }}
         </div>
         <div class="project-desc"> 
           {{projectData[0].ProjectDesc}}
         </div>
         <br>
-        <div class="btn-container" >
-          <span class="view-more-btn">Know More</span>
-        </div>
       </div>
     </div>
     
@@ -24,16 +24,15 @@
         <div class="project-title">
           {{projectData[1].ProjectTitle}}
         </div>
+        <div class="project-tech-stack">
+          {{ projectData[1].TechStack.length > 0 ? "Project Tech stack : [" + projectData[1].TechStack.join(' , ') + "]" : "" }}
+        </div>
         <div class="project-desc">  
           {{projectData[1].ProjectDesc}}
         </div>
         <br>
-        <div class="btn-container" >
-          <span class="view-more-btn">Know More</span>
-        </div>
       </div>
     </div>
-    
   </div>
 
     <div class="card" [class.active]="activeCard === 2" [style.background-image]="'url(' + projectData[2].ImgPath + ')'" (click)="cardClicked(2)" >
@@ -43,16 +42,15 @@
           <div class="project-title">
             {{projectData[2].ProjectTitle}}
           </div>
+          <div class="project-tech-stack">
+            {{ projectData[2].TechStack.length > 0 ? "Project Tech stack : [" + projectData[2].TechStack.join(' , ') + "]" : "" }}
+          </div>
           <div class="project-desc">  
             {{projectData[2].ProjectDesc}}
           </div>
           <br>
-          <div class="btn-container" >
-            <span class="view-more-btn">Know More</span>
-          </div>
         </div>
       </div>
-      
     </div>
 
     <div class="card" [class.active]="activeCard === 3" [style.background-image]="'url(' + projectData[3].ImgPath + ')'" (click)="cardClicked(3)" >
@@ -62,13 +60,14 @@
           <div class="project-title">
             {{projectData[3].ProjectTitle}}
           </div>
+          <div class="project-tech-stack">
+            {{ projectData[3].TechStack.length > 0 ? "Project Tech stack : [" + projectData[3].TechStack.join(' , ') + "]" : "" }}
+          </div>
           <div class="project-desc">  
             {{projectData[3].ProjectDesc}}
           </div>
           <br>
-          <div class="btn-container" >
-            <span class="view-more-btn">Know More</span>
-          </div>
+         
         </div>
       </div>
       

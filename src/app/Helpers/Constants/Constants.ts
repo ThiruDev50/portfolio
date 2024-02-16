@@ -123,25 +123,29 @@ export const projectData : ProjectInterface[]=[
     ImgPath:"/assets/images/img-1.jpg",
     ProjectDisplayName:"Display Name 1",
     ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
-    ProjectTitle:"Project Titlle 1"
+    ProjectTitle:"Project Titlle 1",
+    TechStack:["Angular","React","PBI"]
   },
   {
     ImgPath:"https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ProjectDisplayName:"Display Name 2",
     ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
-    ProjectTitle:"Project Titlle 2"
+    ProjectTitle:"Project Titlle 2",
+    TechStack:["Angular","React","PBI"]
   },
   {
     ImgPath:"https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ProjectDisplayName:"Display Name 3",
     ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
-    ProjectTitle:"Project Titlle 3"
+    ProjectTitle:"Project Titlle 3",
+    TechStack:["Angular","React","PBI"]
   },
   {
     ImgPath:"https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ProjectDisplayName:"Display Name 4",
     ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
-    ProjectTitle:"Project Titlle 4"
+    ProjectTitle:"Project Titlle 4",
+    TechStack:["Angular","React","PBI"]
   }
   
 ]

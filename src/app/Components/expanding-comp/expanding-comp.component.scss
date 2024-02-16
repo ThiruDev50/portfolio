@@ -10,7 +10,7 @@
   min-width: 60px;
   overflow: hidden;
   // background-image:url("https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
-  margin: 5px;
+  margin: 20px;
   background-size: auto 150%;
   background-position: center;
   cursor: pointer;
@@ -45,12 +45,14 @@
 }
 .card-container:hover{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
 }
 /* .card-container.active:hover{
   background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
 } */
 .card.active:hover{
-   transform: scale(0.95); 
+   transform: scale(1.1); 
+
 }
 
 .card-container.active:not(:hover) .project-details{
@@ -66,37 +68,69 @@
   white-space: nowrap; 
 }
 
+
 .project-details{
   height: 100%;
   color: white;
   padding: 20px;
+  padding-top:40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
 }
 .project-title{
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
+  color: #00aced;
+  animation: zoomFadeFromAbove 0.5s ease-in-out forwards;
+
 }
 
-.view-more-btn{
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 38px;
-  border-radius: 8px;
-  width: 110px;
-  background-color: #00aced;
-  color: white;
+
+.project-tech-stack{
+  font-size: 15px;
   font-weight: bold;
-  font-size: 17px;
-}
-.view-more-btn:hover{
-  background-color: #0c1022;
-}
-.btn-container{
-  display: flex;
-  align-items: center;
+  margin-bottom: 10px;
+  animation: zoomFadeFromLeft 0.5s ease-in-out forwards;
+
 }
 
+.project-tech-stack:hover{
+  text-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
+
+}
+.project-desc{
+  font-size: 15px;
+  animation: zoomFadeFromBelow 0.5s ease-in-out forwards;
+
+}
+@keyframes zoomFadeFromAbove {
+  0% {
+    transform: translateY(-70%) scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes zoomFadeFromBelow {
+  0% {
+    transform: translateY(70%) scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes zoomFadeFromLeft {
+  0% {
+    transform: translateX(50%) scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}

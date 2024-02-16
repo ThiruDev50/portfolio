@@ -19,9 +19,10 @@ export class ExpandingCompComponent {
     this.setInitalCard();
   }
   setProjectData() {
-    const randomInd = Math.floor(
+    let randomInd = Math.floor(
       Math.random() * (this.showingProjectsCount + 1)
     );
+    randomInd=0
     if (randomInd<this.showingProjectsCount){
       this.initalCardIndex=randomInd;
     }
