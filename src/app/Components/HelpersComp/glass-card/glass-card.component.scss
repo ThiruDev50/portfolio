@@ -3,19 +3,26 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 40px 0;
 }
 
 .container .box {
   position: relative;
-  width: 320px;
-  height: 400px;
+  width: 25%;
+
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px 30px;
   transition: 0.5s;
   cursor: pointer;
+  @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+    height: 400px;
+  }
+  
+  /* Adjust font size for extra-large screens */
+  @media only screen and (min-width: 1500px) {
+    height: 450px;
+  }
 }
 
 .container .box::before {
@@ -26,7 +33,7 @@
   width: 50%;
   height: 100%;
   text-decoration: none;
-  background: linear-gradient(315deg, #00aced, #00aced);
+  background: linear-gradient(315deg, var(--app-primary-color), var(--app-primary-color));
 
   border-radius: 8px;
   transform: skewX(15deg);
@@ -40,7 +47,7 @@
   left: 50;
   width: 50%;
   height: 100%;
-  background: linear-gradient(315deg, #00aced, #00aced);
+  background: linear-gradient(315deg, var(--app-primary-color), var(--app-primary-color));
   border-radius: 8px;
   transform: skewX(15deg);
   transition: 0.5s;
@@ -146,7 +153,8 @@
 .container .box .content {
   position: relative;
   left: 0;
-  padding: 20px 40px;
+ 
+padding: 10% 8%;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -162,14 +170,14 @@
 }
 
 .container .box .content h2 {
-  font-size: 2em;
+  font-size: 1.5rem;
   color: #fff;
-  margin-bottom: 10px;
+  margin: 2px;
 }
 
 .container .box .content p {
-  font-size: 1.1em;
-  margin-bottom: 10px;
+  font-size: 0.8rem;
+  
   line-height: 1.4em;
   height: 120px;
   overflow: hidden;
@@ -180,10 +188,10 @@
 
 .container .box .content a {
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 0.8rem;
   color: #111;
   background: #fff;
-  padding: 10px;
+  padding:3%;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 700;
@@ -191,8 +199,12 @@
 }
 
 .container .box .content a:hover {
-  background: #0c1022;
+  background: var(--app-secondary-color);
 
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
   color: white;
+}
+
+.no-link{
+  cursor: not-allowed;
 }

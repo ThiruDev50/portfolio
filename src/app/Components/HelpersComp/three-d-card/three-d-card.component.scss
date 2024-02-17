@@ -4,10 +4,11 @@
   text-align: center;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.3rem;
   padding: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 .mouse-position-tracker {
@@ -17,26 +18,20 @@
   z-index: 2;
 }
 
-
-/* 1st, 4th, 7th */
 .mouse-position-tracker:nth-child(3n - 2) {
   left: 0;
 }
-/* 2nd, 5th, 8th */
 .mouse-position-tracker:nth-child(3n - 1) {
   left: calc(100% / 3);
 }
 
-/* 2nd, 5th, 8th */
 .mouse-position-tracker:nth-child(3n) {
   right: 0;
 }
 
-/* 4 to 6 */
 .mouse-position-tracker:nth-child(n + 4):nth-child(-n + 6) {
   top: calc(100% / 3);
 }
-/* 7 to 9 */
 .mouse-position-tracker:nth-child(n + 7):nth-child(-n + 9) {
   bottom: 0;
 }
@@ -48,14 +43,12 @@
 }
 
 .tilting-card-body {
-  background-color: #0c1022;
+  background-color: var(--app-secondary-color);
   position: absolute;
   inset: 0;
-  border: 10px solid #00aced;
+  border: 10px solid var(--app-primary-color);
 
   border-radius: 20px;
-  // outline: 3px solid red;
-  // background-image: url("https://images.unsplash.com/photo-1528321917418-af00f8823ded?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MjY1Mzg&ixlib=rb-1.2.1&q=80&w=800");
   background-size: cover;
   background-position: center;
 }
@@ -80,51 +73,51 @@
 .mouse-position-tracker:nth-child(1):hover ~ .tilting-card-body {
   --rotationX: var(--angle);
   --rotationY: calc(var(--angle) * -1);
-  box-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
-  
+  box-shadow: 0 0 30px var(--app-primary-color),
+    0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
 }
 
 .mouse-position-tracker:nth-child(2):hover ~ .tilting-card-body {
   --rotationX: var(--angle);
-  box-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
-
+  box-shadow: 0 0 30px var(--app-primary-color),
+    0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
 }
 
 .mouse-position-tracker:nth-child(3):hover ~ .tilting-card-body {
   --rotationX: var(--angle);
   --rotationY: var(--angle);
-  box-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
-
+  box-shadow: 0 0 30px var(--app-primary-color),
+    0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
 }
 
 .mouse-position-tracker:nth-child(4):hover ~ .tilting-card-body {
   --rotationY: calc(var(--angle) * -1);
-  box-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
-
+  box-shadow: 0 0 30px var(--app-primary-color),
+    0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
 }
 
 .mouse-position-tracker:nth-child(6):hover ~ .tilting-card-body {
   --rotationY: var(--angle);
-  box-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
-
+  box-shadow: 0 0 30px var(--app-primary-color),
+    0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
 }
 
 .mouse-position-tracker:nth-child(7):hover ~ .tilting-card-body {
   --rotationY: calc(var(--angle) * -1);
   --rotationX: calc(var(--angle) * -1);
-  box-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
-
+  box-shadow: 0 0 30px var(--app-primary-color),
+    0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
 }
 
 .mouse-position-tracker:nth-child(8):hover ~ .tilting-card-body {
   --rotationX: calc(var(--angle) * -1);
-  box-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
-
+  box-shadow: 0 0 30px var(--app-primary-color),
+    0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
 }
 
 .mouse-position-tracker:nth-child(9):hover ~ .tilting-card-body {
   --rotationY: var(--angle);
   --rotationX: calc(var(--angle) * -1);
-  box-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
-
+  box-shadow: 0 0 30px var(--app-primary-color),
+    0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
 }

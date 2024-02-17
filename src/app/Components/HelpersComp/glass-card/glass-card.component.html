@@ -3,24 +3,27 @@
       <span></span>
       <div class="content">
         <h2>{{firstCard.Title}}</h2>
-        <p>Lorem ipsum dolor sit amet,</p>
-        <a href="#">Read More</a>
+        <p>{{firstCard.Desc}}</p>
+        <a *ngIf="firstCard.ReadMoreLink.length > 0; else noLink" [href]="firstCard.ReadMoreLink">Read more</a>
+        <ng-template #noLink><a class="no-link">No link available</a></ng-template>
       </div>
     </div>
-    <div class="box" *ngIf="this.secondCard" data-aos="zoom-in" [style.background-before]="expression" [style.background-after]="expression">
+    <div class="box" *ngIf="this.secondCard" data-aos="zoom-in" >
       <span></span>
-      <div class="content">
+      <div class="content"> 
         <h2>{{secondCard.Title}}</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#">Read More</a>
+        <p>{{secondCard.Desc}}</p>
+        <a *ngIf="secondCard.ReadMoreLink.length > 0; else noLink" [href]="secondCard.ReadMoreLink">Read more</a>
+        <ng-template #noLink><a class="no-link">No link available</a></ng-template>
       </div>
     </div>
     <div class="box" *ngIf="this.thirdCard" data-aos="fade-right">
       <span></span>
       <div class="content">
         <h2>{{thirdCard.Title}}</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#">Read More</a>
+        <p>{{thirdCard.Desc}}</p>
+        <a *ngIf="thirdCard.ReadMoreLink.length > 0; else noLink" [href]="thirdCard.ReadMoreLink">Read more</a>
+        <ng-template #noLink><a class="no-link">No link available</a></ng-template>
       </div>
     </div>
   </div>

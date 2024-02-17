@@ -82,29 +82,45 @@ export const skillsData: SkillsInterface[] = [
 
 export const acheivementsData : AcheivementsInterface[]=[
   {
-    Title:"One"
+    Title:"One",
+    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    ReadMoreLink:""
   },
   {
-    Title:"Onesd"
+    Title:"Onesd",
+    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    ReadMoreLink:""
   },
   {
-    Title:"Onesfs"
+    Title:"Onesfs",
+    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    ReadMoreLink:""
   },
   {
-    Title:"Onsfswe"
+    Title:"Onsfswe",
+    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    ReadMoreLink:""
   },
   {
-    Title:"Onwrwte"
+    Title:"Onwrwte",
+    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    ReadMoreLink:""
   },
 
   {
-    Title:"O6ine"
+    Title:"O6ine",
+    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    ReadMoreLink:""
   },
   {
-    Title:"Onukyukdhe"
+    Title:"Onukyukdhe",
+    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    ReadMoreLink:""
   },
   {
-    Title:"Ondhdfjhe"
+    Title:"Ondhdfjhe",
+    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    ReadMoreLink:""
   },
 ]
 
@@ -120,14 +136,14 @@ export const visitTaleData : string[]=[
 
 export const projectData : ProjectInterface[]=[
   {
-    ImgPath:"/assets/images/img-1.jpg",
+    ImgPath:"assets/projects/img-1.jpg",
     ProjectDisplayName:"Display Name 1",
     ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
     ProjectTitle:"Project Titlle 1",
     TechStack:["Angular","React","PBI"]
   },
   {
-    ImgPath:"https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    ImgPath:"https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8MTYlM0E5fGVufDB8fDB8fHww",
     ProjectDisplayName:"Display Name 2",
     ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
     ProjectTitle:"Project Titlle 2",

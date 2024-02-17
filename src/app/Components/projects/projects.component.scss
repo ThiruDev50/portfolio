@@ -1,13 +1,15 @@
 .projects-div{
-    padding-top: 10%;
-
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 3%;
+    @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+      padding-top: 5%;
+    }
+    @media only screen and (min-width: 1500px) {
+      padding-top: 10%;
+    }
 }
 .projects-container {
     flex-wrap: wrap;
-    margin-left: 25%;
   }
-.project-item{
-    width: 400px; 
-    height: 500px;
-    margin-bottom: 10px;
-}
+

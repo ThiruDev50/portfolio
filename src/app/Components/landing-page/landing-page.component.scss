@@ -37,7 +37,7 @@
 
 .btn {
   position: relative;
-  color: #00aced;
+  color: var(--app-primary-color);
   border: none;
   z-index: 2;
 }
@@ -57,26 +57,26 @@
   left: 0;
   border-bottom-color: transparent;
   border-right-color: transparent;
-  border-top-color: #00aced;
-  border-left-color: #00aced;
+  border-top-color: var(--app-primary-color);
+  border-left-color: var(--app-primary-color);
 }
 .btn:after {
   bottom: 0;
   right: 0;
   border-top-color: transparent;
   border-left-color: transparent;
-  border-bottom-color: #00aced;
-  border-right-color: #00aced;
+  border-bottom-color: var(--app-primary-color);
+  border-right-color: var(--app-primary-color);
 }
 .btn:hover:before,
 .btn:hover:after {
-  border-color: #00aced;
+  border-color: var(--app-primary-color);
   height: 100%;
   width: 100%;
-  box-shadow: 0 0 5px #00aced, 0 0 5px #00aced inset;
+  box-shadow: 0 0 5px var(--app-primary-color), 0 0 5px var(--app-primary-color) inset;
 }
 .glowing-text{
-  text-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
+  text-shadow: 0 0 30px var(--app-primary-color), 0 0 50px var(--app-primary-color),0 0 100px var(--app-primary-color);
 }
 .animated-btn {
   animation: fadeIn 0.5s linear;
@@ -106,7 +106,6 @@
 }
 
 .nav-bar-height {
-  margin-top: 60px;
   color: white;
 }
 .quotes-comp{

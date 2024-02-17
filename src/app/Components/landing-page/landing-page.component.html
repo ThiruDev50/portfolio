@@ -19,11 +19,12 @@
       >
         About
       </button>
+
       <button
         class="custom-btn btn animated-btn"
-        (click)="scrollToComponent('services')"
+        (click)="scrollToComponent('project')"
       >
-        Services
+        Project
       </button>
       <button
         class="custom-btn btn animated-btn"
@@ -33,15 +34,15 @@
       </button>
       <button
         class="custom-btn btn animated-btn"
-        (click)="scrollToComponent('project')"
+        (click)="scrollToComponent('contributions')"
       >
-        Project
+        Contributions
       </button>
       <button
         class="custom-btn btn animated-btn"
-        (click)="scrollToComponent('contact')"
+        (click)="scrollToComponent('bonus')"
       >
-        Contact
+        Bonus
       </button>
     </div>
   </nav>
@@ -59,10 +60,10 @@
       <app-skills></app-skills>
     </div>
 
-    <div #services class="nav-bar-height">
+    <div #contributions class="nav-bar-height">
       <app-contributions></app-contributions>
     </div>
-    <div class="quotes-comp">
+    <div #bonus class="quotes-comp">
       <app-quote></app-quote>
     </div>
     <!-- <div #services class="nav-bar-height">services</div>

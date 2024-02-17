@@ -7,6 +7,8 @@ export  interface SkillsInterface{
 
 export interface AcheivementsInterface{
     Title:string;
+    Desc : string; 
+    ReadMoreLink:string
 }
 export interface ProjectInterface{
     ImgPath:string;

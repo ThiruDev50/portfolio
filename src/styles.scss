@@ -1,34 +1,84 @@
-body{
-    background-color:#0c1022;
-    min-height: 700px;
-    min-width: 1200px;
+:root {
+  --app-primary-color: #00aced;
+  --app-secondary-color: #0c1022;
 }
-.glowing-text{
-    text-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
-  }
 
+body {
+  background-color: var(--app-secondary-color);
+  min-height: 700px;
+  min-width: 1200px;
+}
+.glowing-text {
+  text-shadow: 0 0 30px var(--app-primary-color),
+    0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
+}
+.title-text {
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+}
+.rounded-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  animation: float 4s ease-in-out infinite;
+  box-shadow: 0 0 30px var(--app-primary-color),
+    0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+  }
   .rounded-container {
-    overflow: hidden;
-    border-radius: 50%;
-    animation: float 4s ease-in-out infinite;
-    box-shadow: 0 0 30px #00aced, 0 0 50px #00aced,0 0 100px #00aced;
+    width: 250px;
+    height: 250px;
   }
-  
-  @keyframes float {
-      0% {
-          transform: translatey(0px);
-      }
-      50% {
-          transform: translatey(-30px);
-      }
-      100% {
-          transform: translatey(0px);
-      }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+  body {
+    font-size: 18px;
   }
-  .title-text{
-    font-size: 65px;
-    font-weight: bold;
-    color: white;
+  .rounded-container {
+    width: 350px;
+    height: 350px;
   }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    font-size: 20px;
+  }
+  .rounded-container {
+    width: 400px;
+    height: 400px;
+  }
+}

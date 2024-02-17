@@ -19,7 +19,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { QuoteComponent } from './Components/quote/quote.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { SocialComponent } from './Components/HelpersComp/social/social.component';
-import { HoverCardsComponent } from './Components/HelpersComp/hover-cards/hover-cards.component';
 import { ExpandingCompComponent } from './Components/expanding-comp/expanding-comp.component';
 
 @NgModule({
@@ -38,8 +37,7 @@ import { ExpandingCompComponent } from './Components/expanding-comp/expanding-co
     QuoteComponent,
     FooterComponent,
     SocialComponent,
-    HoverCardsComponent,
-    ExpandingCompComponent,
+    ExpandingCompComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,6 @@ $main-color: #002733;
 $dark-color: #001925;
 $light-color: #87a4b6;
 $medium-light-color: #013747;
-$app-color: #00aced;
 
 img {
   width: 100%;
@@ -13,54 +12,54 @@ img {
   height: 100%;
   max-width: 1300px;
   margin: 0px auto 0px auto;
-
-  @media (min-width: 1200px) and (max-width: 1441px) {
-    max-width: 1250px;
-    padding: 0px 36px;
-  }
-  @media (max-width: 767px) {
-    padding: 0px 30px;
-  }
-  @media (max-width: 479px) {
-    padding: 0px 30px 0px 20px;
-  }
 }
 
 .skills {
-  padding: 20px 0px;
   cursor: pointer;
   height: 200px;
 
   .skills-flex-container {
     display: flex;
     flex-wrap: wrap;
+
     gap: 50px;
     width: 80%;
-    height: 100%;
-    @media (max-width: 700px) {
-      gap: 30px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+      height: 65%;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+      height: 75%;
+    }
+
+    @media only screen and (min-width: 1500px) {
+      height: 100%;
     }
 
     .box {
       flex: 1 1 25%;
-      padding: 25px;
+      align-items: center;
+
+      flex-direction: column;
+      display: flex;
       text-align: center;
-      border: 10px solid $app-color;
+      border: 10px solid var(--app-primary-color);
       border-radius: 30px;
-      box-shadow: 0 0 15px #00aced, 0 0 10px #00aced, 0 0 15px #00aced;
+      box-shadow: 0 0 15px var(--app-primary-color),
+        0 0 10px var(--app-primary-color), 0 0 15px var(--app-primary-color);
       transition: all 0.3s ease-in;
 
       .image {
         transition: all 0.3s ease-in-out 0.1s;
         img {
-          max-width: 75px;
+          max-width: 60%;
           object-fit: contain;
         }
       }
 
       .title {
-        margin-top: 20px;
-        font-size: 20px;
+        font-size: 1em;
         text-align: center;
         font-weight: bold;
         color: white;
@@ -68,7 +67,8 @@ img {
       }
 
       &:hover {
-        box-shadow: 0 0 30px #00aced, 0 0 50px #00aced, 0 0 100px #00aced;
+        box-shadow: 0 0 30px var(--app-primary-color),
+          0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
         transform: scale(1.1);
 
         .image {
@@ -79,7 +79,9 @@ img {
         }
         .title {
           letter-spacing: 2px;
-          text-shadow: 0 0 30px #00aced, 0 0 50px #00aced, 0 0 100px #00aced;
+          text-shadow: 0 0 30px var(--app-primary-color),
+            0 0 50px var(--app-primary-color),
+            0 0 100px var(--app-primary-color);
         }
       }
 

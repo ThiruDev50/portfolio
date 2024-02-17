@@ -1,13 +1,15 @@
 <div>
-  <div data-aos="fade-right" class="glowing-text title-text quote-title">
+  <div data-aos="fade-right" class="glowing-text title-text">
     <span> Visit Tale </span>
-    <span (click)="setRandomQuote()"><i class="fas fa-random glowing-text icon-with-shadow"></i>
-      </span>
+    <span (click)="setRandomQuote()"
+      ><i class="fas fa-random glowing-text icon-with-shadow"></i>
+    </span>
   </div>
- <br>
-  <div class="quote-info">A small random tale for your visit. Click on the 'random icon' to get a random tale.</div>
   <br />
-  <br />
+  <div class="quote-info">
+    A small random tale for your visit. Click on the 'random icon' to get a
+    random tale.
+  </div>
   <br />
   <div data-aos="zoom-in">
     <app-three-d-card [quote]="quote"></app-three-d-card>

@@ -1,16 +1,23 @@
-.about-pp-div{
-    margin-left: 10%;
-    margin-top:5%;
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .about-content-div{
-    margin-right: 10%;
-    margin-top:5%;
-    flex: 1;
-  }
+.about-pp-div {
+  flex: 1;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-content-div {
+  flex: 1;
+}
 
-  .about-div{
-    display: flex;
+.about-div {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 3%;
+  @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+    padding-top: 5%;
   }
+  @media only screen and (min-width: 1500px) {
+    padding-top: 10%;
+  }
+}

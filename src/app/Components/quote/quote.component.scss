@@ -1,20 +1,15 @@
-.generate-icon{
-    font-size: 150px;
-    cursor: pointer;
+.icon-with-shadow {
+  cursor: pointer;
 }
 
-.icon-with-shadow {
-    font-size: 70px;
-    cursor: pointer;
-  }
-  
-  .icon-with-shadow:hover {
-    color: #00aced;
-    text-shadow: 0 0 30px #00aced, 0 0 100px #00aced, 0 0 200px #00aced;
-  }
+.icon-with-shadow:hover {
+  color: var(--app-primary-color);
+  text-shadow: 0 0 30pxvar (--app-primary-color),
+    0 0 100px var(--app-primary-color), 0 0 200px var(--app-primary-color);
+}
 
-  .quote-info{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-  }
+.quote-info {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

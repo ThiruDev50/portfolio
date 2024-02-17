@@ -8,11 +8,5 @@ import { projectData } from '../../Helpers/Constants/Constants';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  allProjectsList:ProjectInterface[]=projectData;
-  topProjectList:ProjectInterface[]=[]
-  topProjectsCount:number=3
-  ngOnInit(){
-    this.topProjectList=this.allProjectsList.slice(0,this.topProjectsCount)
-    console.log(this.topProjectList)
-  }
+ 
 }

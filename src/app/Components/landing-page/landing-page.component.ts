@@ -11,20 +11,14 @@ declare var Typed: any;
 export class LandingPageComponent {
   @ViewChild('home') homeSection!: ElementRef;
   @ViewChild('about') aboutSection!: ElementRef;
-  @ViewChild('services') servicesSection!: ElementRef;
+  @ViewChild('contributions') contributionsSection!: ElementRef;
+  @ViewChild('bonus') bonusSection!: ElementRef;
   @ViewChild('skills') skillsSection!: ElementRef;
   @ViewChild('project') projectSection!: ElementRef;
   @ViewChild('contact') contactSection!: ElementRef;
   
-  ngAfterViewInit(): void {
-    // At this point, the ViewChild properties should be initialized
-   
-  }
-  
   ngOnInit(): void {
-   // 3rd step : 
-              
-// and  
+ 
     AOS.init({
       duration: 1000,
     })
@@ -41,8 +35,11 @@ export class LandingPageComponent {
       case 'about':
         targetElement = this.aboutSection;
         break;
-      case 'services':
-        targetElement = this.servicesSection;
+      case 'contributions':
+        targetElement = this.contributionsSection;
+        break;
+      case 'bonus':
+        targetElement = this.bonusSection;
         break;
       case 'skills':
         targetElement = this.skillsSection;
