@@ -2,48 +2,16 @@
   <nav class="nav-bar" appHideOnScroll>
     <div class="animated-div">
       <div class="space-holder"></div>
-      <button class="custom-btn btn portfolio-btn animated-btn">
-        Portfolio
-      </button>
+      <button class="glow-continously animated-btn" type="button" (click)="scrollToComponent('home')" style="font-size: 1.3rem;">Thiru - Portfolio
+      </button>  
     </div>
     <div class="animated-div">
-      <button
-        class="custom-btn btn animated-btn"
-        (click)="scrollToComponent('home')"
-      >
-        Home
-      </button>
-      <button
-        class="custom-btn btn animated-btn"
-        (click)="scrollToComponent('about')"
-      >
-        About
-      </button>
-
-      <button
-        class="custom-btn btn animated-btn"
-        (click)="scrollToComponent('project')"
-      >
-        Project
-      </button>
-      <button
-        class="custom-btn btn animated-btn"
-        (click)="scrollToComponent('skills')"
-      >
-        Skills
-      </button>
-      <button
-        class="custom-btn btn animated-btn"
-        (click)="scrollToComponent('contributions')"
-      >
-        Contributions
-      </button>
-      <button
-        class="custom-btn btn animated-btn"
-        (click)="scrollToComponent('bonus')"
-      >
-        Bonus
-      </button>
+      <button class="glow-on-hover animated-btn" type="button" (click)="scrollToComponent('home')">Home</button>  
+      <button class="glow-on-hover animated-btn" type="button" (click)="scrollToComponent('about')">About</button>  
+      <button class="glow-on-hover animated-btn" type="button" (click)="scrollToComponent('project')">Project</button>  
+      <button class="glow-on-hover animated-btn" type="button" (click)="scrollToComponent('skills')">Skills</button>  
+      <button class="glow-on-hover animated-btn" type="button" (click)="scrollToComponent('contributions')">Contributions</button>  
+      <button class="glow-on-hover animated-btn" type="button" (click)="scrollToComponent('bonus')" style="margin-right: 30px;">Bonus</button>  
     </div>
   </nav>
   <div class="outer">

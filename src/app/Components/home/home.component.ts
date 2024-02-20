@@ -12,11 +12,8 @@ export class HomeComponent {
       strings: [
         '',
         'Full Stack Developer!',
-        'Youtuber',
-        'Freelancer',
-        'Graphics Designer',
-        'Web Designer',
-        'Web Developer',
+        'Web Developer!',
+        'Mobile Apps Developer!'
       ],
       typeSpeed: 100,
       backSpeed: 40,

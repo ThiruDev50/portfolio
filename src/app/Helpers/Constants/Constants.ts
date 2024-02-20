@@ -82,46 +82,30 @@ export const skillsData: SkillsInterface[] = [
 
 export const acheivementsData : AcheivementsInterface[]=[
   {
-    Title:"One",
-    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    Title:"Cube root by long division method",
+    Desc:"In my 11th grade (2016), I independently discovered the cube root of a number using the long division method which featured in my college magazine.",
     ReadMoreLink:""
   },
   {
-    Title:"Onesd",
-    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    Title:"A flutter package for community",
+    Desc:"Created a package for flutter community, where people can use the package for their projects to acheive bouncing In and out animation.",
+    ReadMoreLink:"https://pub.dev/packages/tdk_bouncingwidget"
+  },
+  {
+    Title:"Github Repo for DSA & Algorithms",
+    Desc:"Maintaining a GitHub repository for Data structures and algorithms, with detailed explanation for the people's interview preparation.",
+    ReadMoreLink:"https://github.com/ThiruDev50/DataStructuresAndAlgorithms"
+  },
+  {
+    Title:"Private Nugget package",
+    Desc:"Created a Nugget package which will handle all the sensitive data like connecting strings and private key by custom algorithms.",
     ReadMoreLink:""
   },
   {
-    Title:"Onesfs",
-    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    Title:"Actively explore various packages",
+    Desc:"Will explore different packages for a project and suggest the improvements to the package author and even contributing for it.",
     ReadMoreLink:""
-  },
-  {
-    Title:"Onsfswe",
-    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    ReadMoreLink:""
-  },
-  {
-    Title:"Onwrwte",
-    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    ReadMoreLink:""
-  },
-
-  {
-    Title:"O6ine",
-    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    ReadMoreLink:""
-  },
-  {
-    Title:"Onukyukdhe",
-    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    ReadMoreLink:""
-  },
-  {
-    Title:"Ondhdfjhe",
-    Desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    ReadMoreLink:""
-  },
+  }
 ]
 
 export const visitTaleData : string[]=[
@@ -136,32 +120,33 @@ export const visitTaleData : string[]=[
 
 export const projectData : ProjectInterface[]=[
   {
-    ImgPath:"assets/projects/img-1.jpg",
-    ProjectDisplayName:"Display Name 1",
-    ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
-    ProjectTitle:"Project Titlle 1",
-    TechStack:["Angular","React","PBI"]
+    ImgPath:"assets/projects/connecting.jpg",
+    ProjectDisplayName:"Student App",
+    ProjectDesc:"Developed a revolutionary educational management system that serves as a single-point solution for students and administrators alike. Leveraging the power of Flutter for the Student App, ASP.NET for the backend, MongoDB for the database, and Microsoft Azure for cloud services, the application streamlines communication, assignment management, and result visualization, providing an all-encompassing educational experience. \n \n Where students can view assigned homeworks, exam results, provided study materials through student's mobile app where all these things manage by respective admins through the admin app. \n\n Admins can create a test in the admin app and assign to students. Once the test period is completed, The backend job will evaluate students test and create a report, which will give valuable info like on which topics students are lagging or in which topics students performed well and more data in both chart and table manner.",
+    ProjectTitle:"Student Management App - OneVoid",
+    TechStack:["Flutter","Dot net","Mongo DB","Azure","Firebase","Redis"]
   },
   {
-    ImgPath:"https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8MTYlM0E5fGVufDB8fDB8fHww",
-    ProjectDisplayName:"Display Name 2",
-    ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
-    ProjectTitle:"Project Titlle 2",
-    TechStack:["Angular","React","PBI"]
+    ImgPath:"assets/projects/ai.jpg",
+    ProjectDisplayName:"Score Prediction AI",
+    ProjectDesc:"Developed a machine learning model tailored to predict future academic scores of students based on their historical performance data. The model utilizes advanced algorithms and statistical analysis to provide accurate predictions for individual subjects, offering valuable insights into student's potential academic outcomes.",
+    ProjectTitle:"Student's score prediction ML",
+    TechStack:["Python 3"]
   },
   {
-    ImgPath:"https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    ProjectDisplayName:"Display Name 3",
-    ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
-    ProjectTitle:"Project Titlle 3",
-    TechStack:["Angular","React","PBI"]
-  },
-  {
-    ImgPath:"https://images.unsplash.com/photo-1581260466152-d2c0303e54f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    ProjectDisplayName:"Display Name 4",
-    ProjectDesc:"ss sfjdkj dnfikdsjnmf sfksjflksd dsjmfsm sojmklk fsvmkl  dfgdegv fhh jhgfn gdjhnfhgn gjnhfgnm ggfngfh gfgn hyj",
+    ImgPath:"assets/projects/password.jpg",
+    ProjectDisplayName:"Password Wallet",
+    ProjectDesc:"Developing a robust Flutter application designed to securely store and retrieve passwords on the user's device. The primary focus is on implementing advanced security measures to safeguard sensitive information while providing a seamless user experience. Additionally, the app will feature a convenient export functionality, allowing users to export their stored passwords to an Excel file for backup and management purposes.",
     ProjectTitle:"Project Titlle 4",
-    TechStack:["Angular","React","PBI"]
-  }
+    TechStack:["Flutter"]
+  },
+  {
+    ImgPath:"assets/projects/bank.jpg",
+    ProjectDisplayName:"Bank Management",
+    ProjectDesc:"Developed a robust bank management application that provides users with secure and seamless financial transactions, mirroring real-world banking experiences. Leveraging React.js for the frontend, ASP.NET for the backend, and SQL Server for the database, the application ensures a user-friendly interface, efficient data processing, and transactional integrity.",
+    ProjectTitle:"Bank Management",
+    TechStack:["React","Dot net","SQL"]
+  },
+ 
   
 ]

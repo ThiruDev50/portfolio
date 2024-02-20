@@ -1,0 +1,16 @@
+.wrap {
+    position:relative;
+    top:100px;
+    left:100px;
+    width:0;
+    perspective:200;
+    transform-style:preserve-3d;
+    
+    div {
+      border:3px solid red;
+      position:absolute;
+      animation: slowRotate 10s infinite ease-in-out alternate;
+      box-shadow:0 0 0 transparent;
+       
+    }
+  }

@@ -2,6 +2,8 @@
   display: flex;
   width: 100%;
   height: auto;
+  min-width: 900px;
+  min-height: 450px;
 }
 
 .card {
@@ -100,6 +102,7 @@
     0 0 50px var(--app-primary-color), 0 0 100px var(--app-primary-color);
 }
 .project-desc {
+  white-space: pre-line;
   font-size: 15px;
   animation: zoomFadeFromBelow 0.5s ease-in-out forwards;
 }

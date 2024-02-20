@@ -20,6 +20,7 @@ import { QuoteComponent } from './Components/quote/quote.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { SocialComponent } from './Components/HelpersComp/social/social.component';
 import { ExpandingCompComponent } from './Components/expanding-comp/expanding-comp.component';
+import { TestComponent } from './Components/HelpersComp/test/test.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ExpandingCompComponent } from './Components/expanding-comp/expanding-co
     QuoteComponent,
     FooterComponent,
     SocialComponent,
-    ExpandingCompComponent
+    ExpandingCompComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
