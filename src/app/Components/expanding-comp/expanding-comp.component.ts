@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProjectInterface } from '../../Elements/Interface/Interface';
+import { ProjectInterface } from '../../Helpers/Interface/Interface';
 import { projectData } from '../../Helpers/Constants/Constants';
 
 @Component({
@@ -22,7 +22,11 @@ export class ExpandingCompComponent {
     let randomInd = Math.floor(
       Math.random() * (this.showingProjectsCount + 1)
     );
-    randomInd=0
+    if( randomInd==3){
+      //Showing OneVoid initially if Bank management comes as random
+      randomInd=0
+    }
+
     if (randomInd<this.showingProjectsCount){
       this.initalCardIndex=randomInd;
     }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProjectInterface } from '../../Elements/Interface/Interface';
+import { ProjectInterface } from '../../Helpers/Interface/Interface';
 import { projectData } from '../../Helpers/Constants/Constants';
 
 @Component({

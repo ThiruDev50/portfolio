@@ -4,8 +4,8 @@ import { LandingPageComponent } from './Components/landing-page/landing-page.com
 import { TestComponent } from './Components/HelpersComp/test/test.component';
 
 const routes: Routes = [
-  {path:'', component:LandingPageComponent},
-  {path:'test', component:TestComponent},
+  {path:'**', component:LandingPageComponent},
+/*   {path:'test', component:TestComponent}, */
 ];
 
 @NgModule({

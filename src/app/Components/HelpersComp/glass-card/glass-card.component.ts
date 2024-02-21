@@ -1,5 +1,5 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
-import { AcheivementsInterface } from '../../../Elements/Interface/Interface';
+import { AcheivementsInterface } from '../../../Helpers/Interface/Interface';
 import * as AOS from 'aos';
 @Component({
   selector: 'app-glass-card',

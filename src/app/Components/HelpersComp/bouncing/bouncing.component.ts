@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SkillsInterface } from '../../../Elements/Interface/Interface';
+import { SkillsInterface } from '../../../Helpers/Interface/Interface';
 
 @Component({
   selector: 'app-bouncing',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AcheivementsInterface } from '../../Elements/Interface/Interface';
+import { AcheivementsInterface } from '../../Helpers/Interface/Interface';
 import { acheivementsData } from '../../Helpers/Constants/Constants';
 @Component({
   selector: 'app-contributions',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SkillsInterface } from '../../Elements/Interface/Interface';
+import { SkillsInterface } from '../../Helpers/Interface/Interface';
 import { skillsData } from '../../Helpers/Constants/Constants';
 
 @Component({

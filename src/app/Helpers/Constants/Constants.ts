@@ -1,4 +1,4 @@
-import { AcheivementsInterface, ProjectInterface, SkillsInterface } from '../../Elements/Interface/Interface';
+import { AcheivementsInterface, ProjectInterface, SkillsInterface } from '../Interface/Interface';
 
 export const skillsData: SkillsInterface[] = [
   {
@@ -108,14 +108,36 @@ export const acheivementsData : AcheivementsInterface[]=[
   }
 ]
 
-export const visitTaleData : string[]=[
-  "A random 1",
-  "A random 2",
-  "A random 3",
-  "A random 4",
-  "A random 5",
-  "A random 6",
-  "A random 7",
+export const visitTaleData: string[] = [
+  "In the end, that doesn't even matter.",
+ "Its not about the destination but the journey",
+ "The selfish intent of wanting to preserve peace, initiates war. and hatred is born in order to protect love.",
+  "Sometimes the greatest adventure is simply a conversation.",
+  "In the dance of life, the pauses are just as important as the moves.",
+  "A single step can start a journey, but it's the choices along the way that define it.",
+  "Stars can't shine without darkness, and people can't find their true strength without facing challenges.",
+  "The magic is not in the destination, but in the discovery of the unknown on the way.",
+  "In the symphony of existence, every being plays a unique and irreplaceable note.",
+  "The pen has the power to rewrite the story, just as much as the heart has the power to rewrite its feelings.",
+  "To understand the present, one must first explore the chapters of the past.",
+  "Courage is not the absence of fear, but the triumph over it. Dare to embrace the unknown.",
+  "The road less traveled may be more challenging, but it often leads to the most beautiful destinations.",
+  "In the garden of memories, every flower tells a story.",
+  "Through the lens of time, every setback is a setup for a comeback.",
+  "The map of life is drawn with the ink of experience and the colors of emotions.",
+  "Not all who wander are lost; sometimes, they are finding their way home.",
+  "The echo of laughter and the shadow of tears both contribute to the masterpiece of a well-lived life.",
+  "Destiny is not a matter of chance, but a matter of choice. Choose your path wisely.",
+  "Sunsets are proof that no matter what happens, every day can end beautifully.",
+  "Embrace the storms of life, for they are the prelude to a rainbow of resilience.",
+  "Footprints on the sand of time may fade, but the impact we leave on others' hearts lasts forever.",
+  "Life's greatest stories are often written in the ink of love and the parchment of shared moments.",
+];
+
+export const visitTaleDataNew : string[]=[
+  "In the end, that doesn't even matter.",
+  "Its not about the destination but the journey",
+  "The selfish intent of wanting to preserve peace, initiates war. and hatred is born in order to protect love.",
 ]
 
 export const projectData : ProjectInterface[]=[
@@ -137,7 +159,7 @@ export const projectData : ProjectInterface[]=[
     ImgPath:"assets/projects/password.jpg",
     ProjectDisplayName:"Password Wallet",
     ProjectDesc:"Developing a robust Flutter application designed to securely store and retrieve passwords on the user's device. The primary focus is on implementing advanced security measures to safeguard sensitive information while providing a seamless user experience. Additionally, the app will feature a convenient export functionality, allowing users to export their stored passwords to an Excel file for backup and management purposes.",
-    ProjectTitle:"Project Titlle 4",
+    ProjectTitle:"Password wallet",
     TechStack:["Flutter"]
   },
   {
