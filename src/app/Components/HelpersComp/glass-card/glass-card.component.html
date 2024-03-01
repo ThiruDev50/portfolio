@@ -4,7 +4,7 @@
       <div class="content">
         <h2>{{firstCard.Title}}</h2>
         <p>{{firstCard.Desc}}</p>
-        <a *ngIf="firstCard.ReadMoreLink.length > 0; else noLink" [href]="firstCard.ReadMoreLink">Read more</a>
+        <a *ngIf="firstCard.ReadMoreLink.length > 0; else noLink" [href]="firstCard.ReadMoreLink" target="_blank">Read more</a>
         <ng-template #noLink><a class="no-link">No link available</a></ng-template>
       </div>
     </div>
@@ -13,7 +13,7 @@
       <div class="content"> 
         <h2>{{secondCard.Title}}</h2>
         <p>{{secondCard.Desc}}</p>
-        <a *ngIf="secondCard.ReadMoreLink.length > 0; else noLink" [href]="secondCard.ReadMoreLink">Read more</a>
+        <a *ngIf="secondCard.ReadMoreLink.length > 0; else noLink" [href]="secondCard.ReadMoreLink" target="_blank">Read more</a>
         <ng-template #noLink><a class="no-link">No link available</a></ng-template>
       </div>
     </div>
@@ -22,7 +22,7 @@
       <div class="content">
         <h2>{{thirdCard.Title}}</h2>
         <p>{{thirdCard.Desc}}</p>
-        <a *ngIf="thirdCard.ReadMoreLink.length > 0; else noLink" [href]="thirdCard.ReadMoreLink">Read more</a>
+        <a *ngIf="thirdCard.ReadMoreLink.length > 0; else noLink" [href]="thirdCard.ReadMoreLink" target="_blank">Read more</a>
         <ng-template #noLink><a class="no-link">No link available</a></ng-template>
       </div>
     </div>
