@@ -1,0 +1,1 @@
+Once build, Copy the certain files here and change href in index.html to href="/portfolio/" - To point proper files
