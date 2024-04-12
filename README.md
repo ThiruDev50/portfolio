@@ -1,7 +1,7 @@
 
 # Thiru's Portfolio
 
-Welcome to the repository for my personal portfolio website. This website serves as a showcase of my skills, projects, experience, and provides information about me. Feel free to explore and get in touch if you have any questions or opportunities.
+Welcome to the repository for my personal portfolio website. This website serves as a showcase of my skills, projects, experience, and provides information about me. Feel free to explore and get in touch if you have any questions or opportunities. [Demo](https://thirudev50.github.io/portfolio/)
 
 ## About Project
 
